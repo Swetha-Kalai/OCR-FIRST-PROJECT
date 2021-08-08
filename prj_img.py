@@ -26,7 +26,7 @@ if __name__ == "__main__":
         out_file = input("Enter output file name...")
         output_file_path_and_name = os.path.join(out_directory, out_file+".txt")
 
-        out_file = open(output_file_path_and_name, "w+")
+        out_file = open(output_file_path_and_name, "a+")
         out_file.write(scanned_text)
         out_file.write("\nAPLLICATON DONE")
         out_file.seek(0,0)
